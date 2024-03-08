@@ -1,0 +1,22 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const data_1 = __importDefault(require("./data"));
+const dollar_1 = __importDefault(require("./dollar"));
+const formatoBrasil_1 = __importDefault(require("./formatoBrasil"));
+const formatoUsa_1 = __importDefault(require("./formatoUsa"));
+const moeda_1 = __importDefault(require("./moeda"));
+const real_1 = __importDefault(require("./real"));
+let formatador;
+let moeda = new moeda_1.default(50.3);
+formatador = new real_1.default(moeda);
+console.log(formatador.formatar());
+formatador = new dollar_1.default(moeda);
+console.log(formatador.formatar());
+let data = new data_1.default(new Date());
+formatador = new formatoBrasil_1.default(data);
+console.log(formatador.formatar());
+formatador = new formatoUsa_1.default(data);
+console.log(formatador.formatar());
