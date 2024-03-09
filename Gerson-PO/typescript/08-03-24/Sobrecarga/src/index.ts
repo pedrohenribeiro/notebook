@@ -3,8 +3,9 @@
 //import Lista from "./lista";
 
 import Animal from "./animal"
-import Gata from "./cachorro"
 import Cachorro from "./cachorro"
+import Gato from "./gato"
+
 
 /*
 let fatec = new Empresa("Fatec", "2555")
@@ -28,7 +29,7 @@ const fazerBarulho = (animal: Animal) =>{
 let dog = new Cachorro()
 fazerBarulho(dog)
 
-let cat = new Gata()
+let cat = new Gato()
 fazerBarulho(cat)
 //usa a interface para limitar acesso, para dar diferentes 
 //"atributos/metodos" para classes que herdam de uma mesma 

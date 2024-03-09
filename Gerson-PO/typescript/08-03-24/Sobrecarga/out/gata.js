@@ -4,7 +4,7 @@ var Gata = /** @class */ (function () {
     function Gata() {
     }
     Gata.prototype.fazerBarulho = function () {
-        return ("Mmiaaau miaaauu");
+        return ("Mmiaaau");
     };
     return Gata;
 }());

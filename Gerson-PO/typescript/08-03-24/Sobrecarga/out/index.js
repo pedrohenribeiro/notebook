@@ -7,7 +7,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var cachorro_1 = __importDefault(require("./cachorro"));
-var cachorro_2 = __importDefault(require("./cachorro"));
+var gato_1 = __importDefault(require("./gato"));
 /*
 let fatec = new Empresa("Fatec", "2555")
 console.log(fatec)
@@ -26,7 +26,10 @@ console.log(`O dado 2 é: ${lista.quantidade}`)
 var fazerBarulho = function (animal) {
     console.log(animal.fazerBarulho());
 };
-var dog = new cachorro_2.default();
+var dog = new cachorro_1.default();
 fazerBarulho(dog);
-var cat = new cachorro_1.default();
+var cat = new gato_1.default();
 fazerBarulho(cat);
+//usa a interface para limitar acesso, para dar diferentes 
+//"atributos/metodos" para classes que herdam de uma mesma 
+//classe superior
