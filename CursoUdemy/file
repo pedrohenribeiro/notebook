@@ -1,0 +1,6 @@
+const ObterCarteiraMotorista = (idade) =>{
+    if(idade >= 18)
+        return 'bora dirigir!'
+    else
+        return 'voce ainda nao pode!!'
+}
